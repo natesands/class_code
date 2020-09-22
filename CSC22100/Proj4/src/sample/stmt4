@@ -1,0 +1,5 @@
+BULK INSERT db1.Students 
+FROM '/Users/ironchefnate/Library/Mobile Documents/com~apple~CloudDocs/Documents/CityCollege/CSC22100/MySQLTest/src/com/example/mysqltest/students'
+WITH (FIRSTROW = 2, FIELDTERMINATOR =',', ROWTERMINATOR = '\n',
+ERRORFILE = '/Users/ironchefnate/Library/Mobile Documents/com~apple~CloudDocs/Documents/CityCollege/CSC22100/MySQLTest/src/com/example/mysqltest/errors.csv',
+TABLOCK)

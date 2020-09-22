@@ -1,0 +1,30 @@
+class Node {
+public:
+
+private:
+  node* left;
+  node* right;
+  node* p;
+  int val;
+};
+
+class BST {
+public:
+  inorder(node* ndptr); // left-root-right
+  preorder(node* ndptr); // root-left-right
+  postorder(node* ndptr); // left-right-root
+
+private:
+  int size;
+  node* root;
+};
+
+int* BST::inorder(node* ndptr)
+{
+  if (*ndptr.left != NULL)
+    inorder(*ndptr.left);
+  if (*ndptr.right != NULL)
+    inorder(*ndptr.right);
+  cout << (*ndptr.val);
+}
+  

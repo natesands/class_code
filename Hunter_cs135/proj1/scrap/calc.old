@@ -1,0 +1,34 @@
+/* header */
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+  int number, sum;
+  char operation;
+  bool adding = true;
+  sum = 0;
+
+  while(cin>>number) {
+    if (adding == true) {
+      sum += number;
+    }
+    else {
+      sum -= number;
+    }
+
+    if(cin>>operation) {
+    
+    if (operation == '+') {
+      adding = true;
+    }
+    if (operation == '-') {
+      adding = false;
+    }
+   }
+ }
+  cout << sum << endl;
+
+return 0;
+}  
